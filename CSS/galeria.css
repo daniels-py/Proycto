@@ -1,0 +1,488 @@
+body {
+  background: linear-gradient(#e1edb9));
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+img:hover{
+  transform: translateY(-3px);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  text-decoration: none;
+}
+
+header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #FFFFFF;
+  z-index: 2;
+}
+
+/*HEADER SUPERIOR*/ 
+
+.header__superior{
+  max-width: 100%;
+  max-height: 129px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(IMG/FondoHeader.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.logoyly img{
+  width: 375px;
+  height: 125px;
+}
+
+
+/*ARTICULOS*/
+main{
+  padding: 40px 20px;
+  margin-top: 80px;
+  display: flex;
+}
+
+article{
+  max-width: 750px;
+  margin-left: 60px;
+  margin: 20px auto;
+  padding: 40px;
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+
+article h2{
+  color: #12193d;
+  font-size: 30px;
+  padding: 20px;
+  border-bottom: 2.5px solid #12193d;
+}
+
+article p{
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 300px;
+  line-height: 1.5;
+}
+
+/*BANNER*/
+.banner{
+  width: 480px;
+  height: 580px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+.banner ul{
+  display: flex;
+  animation: cambio 20s infinite alternate linear;
+}
+
+.banner li{
+  width: 100%;
+  list-style: none;
+}
+
+.banner img{
+  width: 480px;
+  height: 580px;
+}
+
+@keyframes cambio{
+  0%{margin-left: 0;}
+  14.29%{margin-left: 0;}
+
+  28.57%{margin-left: -100%;}
+  42.86%{margin-left: -100%;}
+
+  57.14%{margin-left: -200%;}
+  71.43%{margin-left: -200%;}
+
+  85.71%{margin-left: -300%;}
+  100%{margin-left: -500%;}
+}
+
+/*ELEMENTOS RESPONSIVOS*/
+
+.icon__menu{
+  font-size: 26px;
+  color: #545454;
+  cursor: pointer;
+  width: 26px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#label__check{
+  width: 26px;
+  height: 100%;
+  display: none;
+}
+
+#check__menu{
+  display: none;
+}
+
+@media screen and (max-width: 720px){
+  .search input{
+      display: none;
+  }
+
+  .header__superior {
+      padding: 10px;
+  }
+  
+  .logoavipedia img{
+      width: 255px;
+      height: 150px;
+  }
+
+  nav > ul{
+      flex-direction: column;
+      background-color: #FFFFFF;
+      position: fixed;
+      left: 0;
+      top: 200px;
+      width: 100%;
+      height: 0px;
+      transition: all 300ms ease;
+      z-index: 100;
+      opacity: 0;
+      visibility: hidden;
+  }
+
+  nav > ul > li > a:hover{
+      transform: scale(1);
+  }
+
+  nav ul li ul{
+      left: 90px;
+  }
+
+  nav > ul > li:hover ul{
+      top: 60px;
+  }
+
+  nav > ul > li:first-child a{
+      background-position: 20px;
+  }
+
+  nav > ul > li:nth-last-child(5) a{
+      background-position: 20px;
+  }
+
+  nav > ul > li:nth-last-child(4) a{
+      background-position: 20px;
+  }
+
+  nav > ul > li:nth-last-child(3) a{
+      background-position: 20px;
+  }
+
+  nav > ul > li:nth-last-child(2) a{
+      background-position: 20px;
+  }
+
+  nav > ul > li:nth-last-child(1) a{
+      background-position: 20px;
+  }
+
+  #selected{
+      transform: scale(1);
+  }
+
+  #label__check{
+      display: block;
+  }
+
+  #icon__menu{
+      display: flex;
+  }
+
+  #check__menu:checked ~ nav > ul{
+      height: 300px;
+      visibility: visible;
+      opacity: 1;
+  }
+}
+
+
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 100%;
+  min-height: 45rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  background-color: whitesmoke;
+}
+.container {
+  width:100%;
+  padding-right:15px;
+  padding-left:15px;
+  margin-right:auto;
+  margin-left:auto;
+  max-width:800px
+}
+/* Basic appearance stuff ends here */
+
+/* Parallax Horizontal Scroller - by Bree Dulmage, 2020 */
+#proparallax {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  min-height: 37.5rem;
+  border: 10px solid black;
+  box-shadow: 0px 8px 10px 8px grey;
+}	
+
+#proparallax img {
+  position: absolute;
+  width: 50rem;
+  height: 37.5rem;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+@keyframes parallax_one { /* controls img.one movement */
+  0% { /* .imageloaded */
+    height: 37.5rem;
+    width: 50rem;
+    left: 0rem;
+    opacity: 1;
+  }
+  /* .imagehold runs from 0 to 27.77% */
+  27.77% { /* .imageloaded */
+    width: 50rem;
+    left: 0rem;
+  }
+  27.78% { /* .imagepreunload */
+    width: 50rem;
+    left: 0rem;
+    right: 50rem;
+  }
+  33.33% { /* .imageunloaded */
+    height: 37.5rem;
+    width: 0rem;
+    left: 0rem;
+    right: 0rem;
+    opacity: 1;
+  }
+  33.34% { /* imageoff */
+    opacity: 0;	
+  }
+  94.43% { /* .imageon */
+    left: 0rem;
+    opacity: 0;
+  }
+  94.44% { /* .imageinitial */
+    height: 37.5rem;
+    width: 0rem;
+    left: 50rem;
+    opacity: 1;
+  }
+  100% { /* .imageloaded */
+    width: 50rem;
+    left: 0rem;
+    opacity: 1;		
+  }
+}
+
+@keyframes parallax_two { /* controls img.two movement */
+  0% { /* .imageoff */
+    opacity: 0;
+  }
+  27.77% { /* .imageon */
+    left: 0rem;
+    opacity: 0;
+  }
+  27.78% { /* .imageinitial */
+    width: 0rem;
+    height: 37.5rem;
+    left: 50rem;
+    opacity: 1;
+  }
+  33.33% { /* .imageloaded */
+    width: 50rem;
+    left: 0rem;
+  }
+  /* .imagehold runs from 33.34% - 61.10% */
+  61.10%{ /* .imageloaded */
+    width: 50rem;
+    left: 0rem;
+  }
+  61.11% { /* .imagepreunload */
+    width: 50rem;
+    left: 0rem;
+    right: 50rem;
+  }
+  66.67% { /* .imageunloaded */
+    width: 0rem;
+    right: 0rem;
+    left: 0rem;
+    height: 37.5rem;
+    opacity: 1;
+  }
+  66.68% { /* .imageoff */
+    opacity: 0;
+  }
+  100% { /* .imageoff */
+    opacity: 0;
+  }
+}
+
+@keyframes parallax_three { /* controls img.three movement */
+  0% { /* .imageoff */
+    opacity: 0;
+  }
+  61.10%{ /* .imageon */
+    opacity: 0;
+  }
+  61.11% { /* .imageinitial */
+    width: 0rem;
+    height: 37.5rem;
+    left: 50rem;
+    opacity: 1;		
+  }
+  66.67% { /* .imageloaded */
+    width: 50rem;
+    left: 0rem;
+  }
+  /* .imagehold runs from 66.67% - 94.43% */
+  94.43% { /* .imageloaded */
+    width: 50rem;
+    left: 0rem;
+  }
+  94.44% { /* .imagepreunload */
+    width: 50rem;
+    left: 0rem;
+    right: 50rem;
+  }
+  100% { /* imageunloaded */
+    width: 0rem;
+    right: 0rem;
+    left: 0rem;
+    height: 37.5rem;
+    opacity: 1;
+  }
+}
+
+#proparallax img.one{
+  animation-name: parallax_one; /* controls img.one movement */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 18s;
+  animation-direction: forwards;
+  object-fit: cover;
+}
+
+#proparallax img.two {
+  animation-name: parallax_two; /* controls img.two movement */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 18s;
+  animation-direction: forwards;
+  object-fit: cover;
+}
+
+#proparallax img.three {
+  animation-name: parallax_three; /* controls img.three movement */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 18s;
+  animation-direction: forwards;
+  object-fit: cover;
+}
+
+ /************************
+
+Footer
+
+************************/
+
+footer {
+  background-color: rgb(255, 242, 127);
+  max-width: 10000px; /* Asegura que el footer ocupe todo el ancho de la pantalla */
+  padding: 1rem 0; /* Ajusta el padding según sea necesario */
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(IMG/Footer.png);
+    background-size: cover;
+    margin: 0;
+  }
+footer ul{
+  padding:0;
+}
+footer li{
+  list-style: none;
+}
+.wrap-footer{
+  width: 100%; /* Asegura que este div también ocupe todo el ancho */
+    padding: 0 2%; /* Agrega un poco de padding a los lados si es necesario */
+    display: flex; /* Cambia a flex para mejor alineación */
+    justify-content: space-between; /* Alinea los elementos */
+    margin: 0 auto; 
+}
+.contenedor-ptrincipal {
+  width: 100%; /* Asegura que el contenedor del footer ocupe todo el ancho */
+  margin: 0; /* Elimina márgenes */
+  padding: 0; /* Elimina padding */
+}
+.logo-element_footer{
+  display: flex;
+  margin: 2rem 0;
+}
+.logo-element_footer img{
+  max-height: 75px;
+}
+.element-footer h5{
+  margin: 1rem 0;
+}
+.text-element-footer,
+.rrss-element-footer {
+  flex: 1;
+  padding: 0 1rem; 
+}
+.rrss-element-footer img{
+  width: 40px;
+}
+.rrss-element-footer li{
+  margin-right: 1rem;
+}
+.footer-creds{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  color: #576171;
+  font-size: 0.9rem;
+  max-width: 12000px;
+  margin: 0 auto;
+}
+.legal-creds ul{
+  display: flex;
+  flex-flow: row;
+}
+.legal-creds ul li{
+  padding-right: 1rem;
+}
+.legal-creds ul a{
+  color: #576171;
+  font-size: .9rem;
+}
+body {
+  margin: 0; /* Elimina márgenes del body */
+  padding: 0; /* Elimina padding del body */
+}

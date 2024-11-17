@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    
+    body{
+    background-image: url(../Imágenes/1fondo.png);
+    background-size: cover;
+    font-family:  "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+    
+    a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    }
+
+    header{
+       background-color: rgb(255, 242, 127);
+        padding: 20px 0;
+        text-align: center;
+        }
+
+    .logo{
+    margin-bottom: 10px;
+    }
+    
+    .logo img{
+    height: 70px;
+    display: inline-block;
+    }
+
+    @import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+body{
+margin: 0;
+padding: 0;
+font-family: 'PT Sans', sans-serif;
+font-weight: 700;
+}
+
+nav{
+  margin-top: 15px;
+}
+
+#menu{
+width: 100%;
+background: transparent;
+display: flex;
+justify-content: center;
+padding: 10px 0;
+} 
+
+#menu .menup{
+display: flex;
+    gap: 20px;;
+}
+
+#menu li{
+list-style: none;
+position: relative;
+} 
+
+#menu li a{
+color:#424242;
+font-size:14px;
+padding: 10px 15px;
+/* text-shadow: 0px -1px 0px #000; */
+text-transform: uppercase;
+} 
+
+/*ocultamos el dropdown*/    
+#menu li > ul{
+display:none;
+position:absolute;
+background: #be66a5;
+padding: 0;
+z-index: 2;
+}
+
+#menu li > ul li{
+padding:0;
+margin:1px 0;
+list-style: none;
+} 
+
+#menu li > ul li:first-child, #menu li:hover > ul li:last-child{
+padding:0;
+margin:0 0;
+}
+
+/*le damos el color blanco al enlance del submenu y el background negro */    
+#menu li:hover > a{
+background-color: #ad3a3a;
+color: #fff; 
+} 
+
+#menu li > ul li a{
+color: #fff;
+} 
+
+/* Con esto mantenemos el codigo submenu activo */
+#menu li:hover > ul{
+display:block;
+top: 35px;
+    }
+
+#menu .divider{
+border-right: 1px solid #BCBCBC;
+height: 20px;
+margin: auto 10px;
+}
+#menu .dropdown::after{
+content:"";
+position: absolute;
+top: 15px;
+left: 52px;
+width:0px;
+height:0px;
+border-style: solid;
+border-width: 4.3px;
+border-bottom-width:0px;
+border-color: #BCBCBC transparent transparent transparent;
+}
+
+#menu li:hover::after{
+border-color: #fff transparent transparent transparent;
+}
+
+hr{
+margin: 0;
+padding: 0;
+width: 80%;
+position: relative;
+border-color: rgba(189, 189, 189, 0.6);
+left: 10px;
+}
+
+#menu .dropdown span{
+height: 15px;
+width: 3px;
+position: absolute;
+top: 6px;
+left: 5px;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 45%;
+      margin: auto;
+  }
+  .slider {
+    width: 50%; /* Asegúrate de que el slider ocupe todo el ancho */
+}
+
+  /************************
+
+Footer
+
+************************/
+
+footer {
+  background-color: rgb(255, 242, 127);
+  max-width: 10000px; /* Asegura que el footer ocupe todo el ancho de la pantalla */
+  padding: 1rem 0; /* Ajusta el padding según sea necesario */
+}
+footer ul{
+  padding:0;
+}
+footer li{
+  list-style: none;
+}
+.wrap-footer{
+  width: 100%; /* Asegura que este div también ocupe todo el ancho */
+    padding: 0 2%; /* Agrega un poco de padding a los lados si es necesario */
+    display: flex; /* Cambia a flex para mejor alineación */
+    justify-content: space-between; /* Alinea los elementos */
+    margin: 0 auto; 
+}
+.contenedor-ptrincipal {
+  width: 100%; /* Asegura que el contenedor del footer ocupe todo el ancho */
+  margin: 0; /* Elimina márgenes */
+  padding: 0; /* Elimina padding */
+}
+.logo-element_footer{
+  display: flex;
+  margin: 2rem 0;
+}
+.logo-element_footer img{
+  max-height: 75px;
+}
+.element-footer h5{
+  margin: 1rem 0;
+}
+.text-element-footer,
+.rrss-element-footer {
+  flex: 1;
+  padding: 0 1rem; 
+}
+.rrss-element-footer img{
+  width: 40px;
+}
+.rrss-element-footer li{
+  margin-right: 1rem;
+}
+.footer-creds{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  color: #576171;
+  font-size: 0.9rem;
+  max-width: 12000px;
+  margin: 0 auto;
+}
+.legal-creds ul{
+  display: flex;
+  flex-flow: row;
+}
+.legal-creds ul li{
+  padding-right: 1rem;
+}
+.legal-creds ul a{
+  color: #576171;
+  font-size: .9rem;
+}
+body {
+  margin: 0; /* Elimina márgenes del body */
+  padding: 0; /* Elimina padding del body */
+}

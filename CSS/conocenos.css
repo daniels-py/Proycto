@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url(../Imágenes/fondo\ quienes\ somos.jpeg);
+  color: #33475b;
+  height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+  display: flex;
+  flex-direction: column; /* Para permitir que el footer se quede al final */
+}
+
+/* Contenedor principal */
+.container {
+  width: 100%; /* Deja que el contenedor ocupe todo el ancho */
+  max-width: none; /* Elimina cualquier límite de ancho */
+  margin: 0 auto;
+  flex: 1; /* Asegura que ocupe todo el espacio disponible */
+}
+
+/* Estilos de la imagen */
+img {
+  max-width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Estilos de h3 */
+h3 {
+  text-align: left;
+  font-family: Lato;
+  font-size: 30px;
+  margin: 0; /* Elimina márgenes */
+}
+
+footer {
+  background-color: regb(255,242,127);
+  max-width: 10000px;
+  padding: 1rem 0;
+}
+footer url {
+padding: 0;
+}
+footer li{
+  list-style: none;
+}
+.wrap-footer{
+  width: 100%;
+  padding: 0 2%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.contenedor.principal {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.logo-element_footer{
+  display: flex;
+  margin: 2rem 0;
+}
+.logo-element_footer img{
+  max-height: 75px;
+}
+.element-footer h3{
+  margin: 1rem 0;
+}
+.text-element-footer,
+.rrss-footer{
+  flex: 1rem;
+  padding: 0 1rem;
+}
+.rrss-element-footer img{
+  width: 40px;
+}
+.rrss-element-footer li{
+  margin-right: 1rem;
+}
+.footer-creds{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  color: #576171;
+  font-size: 0.9rem;
+  max-width: 12000px;
+  margin: o auto;
+}
+
+legal-creds ul{
+  display: flex;
+  flex-flow: row;
+}
+.legal-creds ul li{
+  padding-right: 1rem;
+}
+.legal-creds ul a{
+  color: #576171;
+  font-size: .7rem;
+}
+body {
+  margin: 0; 
+  padding: 0; 
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  }
+  
+  nav{
+    margin-top: 15px;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: monospace;
+    }
+  #menu{
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  } 
+  

@@ -1,0 +1,163 @@
+
+
+
+.slider{
+
+    position: absolute;
+    top: 8%;
+    width: 100%;
+    margin-top: -15;
+    overflow: hidden;
+
+}
+
+.slider ul{
+
+    display: flex;
+    padding: 0;
+    width: 300%;
+
+
+}
+
+.slider li {
+
+    width: 100%;
+    list-style: none;
+}
+
+.slide img {
+
+    width: 100%;
+    height: 550px;
+}
+
+@media(min-width: 20px) {
+     .slider img {
+         height: 90px;
+    }
+
+}
+
+@keyframes automatico {
+    
+    0% {margin-left: 0;}
+    50% {margin-left: 0;}
+
+    55% {margin-left: -10%;}
+    100% {margin-left: -10%;}
+    
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 3px;
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  footer img {
+    width: 50px; 
+    height: 50px; 
+  }
+
+  footer img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text {
+    position: absolute;
+    top: -3%; 
+    font-size: 100px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 #ccc;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 330px; 
+    height: 215px; 
+    margin-top: -30px;
+}
+
+div {
+   position: center;
+    top: 50%; /* Ajusta este valor para ubicar el logo un poco más arriba del centro */
+    left: 0%;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#login-form {
+    width: 350px;
+    margin: -235px auto;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#login-form label {
+    display: block;
+    margin-bottom: 2px;
+}
+#login-form input[type="text"], #login-form input[type="password"] {
+    width: 88%;
+    height: 1px;
+    margin-bottom: 5px;
+    padding: 7px;
+    border: 1px solid #ccc;
+}
+#login-form input[type="submit"] {
+    width: 100%;
+    height: 30px;
+    background-color:#ffe2db ;
+    color: black;
+    padding: 6px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+#login-form input[type="submit"]:hover {
+    background-color: #ffe2db;
+}
+
+.imagenes {
+    display: inline-block;
+    margin: 10px; /* margen entre imágenes */
+  }
+  
+  .imagenes img {
+    width: 200px; /* ancho de la imagen */
+    height: 150px; /* alto de la imagen */
+    margin: 10px; /* margen entre imágenes */
+  }

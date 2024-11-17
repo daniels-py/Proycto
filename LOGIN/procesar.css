@@ -1,0 +1,74 @@
+body {
+    background-image: url(../Imágenes/fondo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Poppins", sans-serif;
+}
+
+.fondo {
+    display: block;
+    margin-top: 30%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 25px solid rgb(156, 126, 43);
+    background-color: rgb(238, 218, 105);
+    padding: 20px;
+    width: 600px;
+    height: 600px;
+    flex-direction: column;
+
+}
+
+.logo{
+    display: block;
+    width: 300px;
+    height: 200px;
+    margin: 10px auto;
+}
+.message{
+    font-size: 30px;
+    color:rgb(255, 255, 255);
+}
+
+.boton{
+    font-family: 'Nerko One', cursive;
+    color: #ffffff;
+    width: 120px;
+    height: 40px;
+    margin: 30px auto;
+    display: inline-block;
+    background-color: rgb(175, 150, 66);
+    border:80px #88631d;
+    padding: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px	
+    
+  }
+    .boton:hover{
+    background-color: #f3dc5b;
+  }
+
+  .regreso{
+    font-family: 'Nerko One', cursive;
+    color: #ffffff;
+    width: 120px;
+    height: 40px;
+    margin: 30px auto;
+    display: inline-block;
+    background-color:rgb(175, 150, 66);
+    border:80px #4db176;
+    padding: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px	
+    
+  }
+    .regreso:hover{
+    background-color: #f3dc5b;
+  }

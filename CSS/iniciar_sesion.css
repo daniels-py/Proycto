@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: #e78282;
+  }
+  nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: #fff;
+    width: 100px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.102);
+  }
+  .logo {
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0 10px;
+  }
+  .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .logo span {
+    font-weight: 15px;
+    padding-left: 15px;
+    top: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  a {
+    position: relative;
+    color: rgb(85, 83, 83);
+    font-size: 13px;
+    display: table;
+    width: 300px;
+    padding: 20px;
+  }
+  li a .icon {
+    position: relative;
+    width: 60px;
+    height: 20px;
+    top: 14px;
+    font-size: 2px;
+    text-align: center;
+  }
+  .nav-item {
+    position: relative;
+    top: 8px;
+    margin-left: 20px;
+  }
+  a:hover {
+    background: #eee;
+  }
+  nav:hover {
+    width: 280px;
+    transition: all 0.5s ease;
+  }
+  .logout {
+    position: absolute;
+    bottom: 0;
+  }
+     formato crear cuenta
+  .form-register {
+      width: 400px;
+      height: 100%;
+      background: #24303c;
+      padding: 30px;
+      margin: auto;
+      margin-top: 100px;
+      border-radius: 4px;
+      font-family: 'calibri';
+      color: white;
+      box-shadow: 7px 13px 37px #000;
+    }
+    
+    .form-register h4 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    
+    .controls {
+      width: 100%;
+      background: #24303c;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px solid #1f53c5;
+      font-family: 'calibri';
+      font-size: 18px;
+      color: white;
+    }
+    
+    .form-register p {
+      height: 40px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 40px;
+    }
+    
+    .form-register a {
+      color: white;
+      text-decoration: none;
+    }
+    
+    .form-register a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+    
+    .form-register .botons {
+      width: 100%;
+      background: #1f53c5;
+      border: none;
+      padding: 12px;
+      color: white;
+      margin: 16px 0;
+      font-size: 16px;
+    }
+  /* pie de pagina*/
+  .pie-pagina{
+      margin-top: 100px;
+      width: 100%;
+      background-color: #0a141d;
+    }
+      .pie-pagina .grupo-1{
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap:50px;
+      padding: 45px 0px;
+    }
+    .pie-pagina .grupo-1 .box figure{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .pie-pagina .grupo-1 .box figure img{
+      width: 100px;
+    }
+    .pie-pagina .grupo-1 .box h2{
+      color: #fff;
+      margin-bottom: 25px;
+      font-size: 20px;
+    }
+    .pie-pagina .grupo-1 .box p{
+      color: #efefef;
+      margin-bottom: 10px;
+    }
+    .pie-pagina .grupo-1 .red-social a{
+      display: inline-block;
+      text-decoration: none;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      color: #fff;
+      margin-right: 10px;
+      background-color: #0d2033;
+      text-align: center;
+      transition: all 300ms ease;
+    }
+    .pie-pagina .grupo-1 .red-social a:hover{
+      color: aqua;
+    }
+    .pie-pagina .grupo-2{
+      background-color: #0a1a2a;
+      padding: 15px 10px;
+      text-align: center;
+      color: #fff;
+    }
+    .pie-pagina .grupo-2 small{
+      font-size: 15px;
+    }
+    @media screen and (max-width:800px){
+      .pie-pagina .grupo-1{
+    
+          width: 90%;
+          grid-template-columns: repeat(1, 1fr);
+          grid-gap:30px;
+          padding: 35px 0px;
+      }
+    }

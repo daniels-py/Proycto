@@ -1,0 +1,10 @@
+.imagenes {
+    display: inline-block;
+    margin: 10px; /* margen entre imágenes */
+  }
+  
+  .imagenes img {
+    width: 200px; /* ancho de la imagen */
+    height: 150px; /* alto de la imagen */
+    margin: 10px; /* margen entre imágenes */
+  }

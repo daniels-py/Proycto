@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conocenos</title>
+    <link rel="stylesheet" href="../CSS/conocenos.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+ 
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+  
+      body {
+        width: 100%;
+        height: 100%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding-bottom: 80px; 
+      }
+
+      /* Animación para reemplazar <marquee> */
+      .marquee-text {
+        white-space: nowrap;
+        overflow: hidden;
+        box-sizing: border-box;
+        animation: marquee 15s linear infinite;
+      }
+
+      @keyframes marquee {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+      }
+
+      .marquee-text:hover {
+        animation-play-state: paused;
+      }
+
+    
+      .content {
+        width: 100%;
+        padding: 20px;
+        text-align: left;
+      }
+
+      /* Estilo para el recuadro con la imagen y el texto */
+      .content-box {
+        background-color: #c1c9c8; /* Color de fondo sutil */
+        border: 2px solid #ddd; /* Borde gris suave */
+        border-radius: 10px; /* Bordes redondeados */
+        padding: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+        margin: 20px auto; /* Centrado y con margen superior e inferior */
+        width: 80%;
+        max-width: 700px; /* Ancho máximo */
+        float: center; /* Alinear el recuadro a la derecha */
+      }
+
+      .content-box img {
+        width: 100%;
+        max-width: 450px;
+        border-radius: 8%; /* Bordes redondeados en la imagen */
+        margin-bottom: 20px;
+      }
+
+      .content-box h3 {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #000000; /* Texto oscuro para buen contraste */
+      }
+
+      /* Footer con color amarillo y fijado en el fondo */
+      footer {
+        background-color: #FFEB3B; /* Color amarillo */
+        color: #000; /* Texto negro para contraste */
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 1000; /* Para que se quede encima de otros elementos */
+      }
+
+      .wrap-footer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .text-element-footer {
+        flex: 1;
+        padding: 10px;
+      }
+
+      .rrss-element-footer ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .rrss-element-footer li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      .rrss-element-footer img {
+        width: 30px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    
+  <nav id="menu">
+      <ul class="menup"> 
+          <li><a href="../index.html">REGRESAR</a></li>
+          
+
+    <div class="content">
+      <div class="content-box">
+        <img src="../Imágenes/grupo.jpeg" alt="Grupo de estudiantes o biblioteca">
+        <h3>
+          Somos una base de datos en la cual se encuentran registrados todos los libros presentes en la biblioteca de la primaria, organizados por categorías creadas pensando en su sencilla accesibilidad. Además contamos con algunos de estos libros en formato PDF para que así todos puedan acceder a la lectura. Lo que buscamos también es que con nosotros se implemente el uso de las TIC en la institución María Medina, más específicamente en la sede primaria ya antes mencionada además mejorar los procesos de escritura en la misma.
+        </h3>
+      </div>
+    </div>
+
+    
+      <footer class="footer">
+      <div class="wrap-footer">
+          <div class="text-element-footer element-footer">
+              <h3>Sistema de Información para la Gestión de la Biblioteca de Primaria Luis María Rojas</h3>
+          </div>
+          <div class="text-element-footer element-footer">
+              <li>Dirección: Calle 3 # 039 </li>
+              <li>Sede Luis María Rojas </li>
+              <ul>
+                  <li>IED Maria Medina</li>
+                  <li>Fosca, Cundinamarca</li>
+                  <li>Tel:3112284276</li>
+              </ul>
+          </div>
+          <div class="rrss-element-footer element-footer">
+              <h5>Redes Sociales</h5>
+              <ul>
+              <li><a href="https://facebook.com" target="_blank"><img src="path-to-facebook-icon" alt="Facebook"></a></li>
+              
+              </ul>
+          </div>
+      </div>
+  </footer>
+</body>
+</html>
