@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Prestamos</title>
+    <!-- Incluir CSS de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Barra lateral -->
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="bg-dark text-white" id="sidebar" style="width: 250px; height: 100vh; display: flex; flex-direction: column;">
+        <div class="sidebar-heading text-center py-4" style="font-size: 18px; font-weight: bold;">Administracion de Libros</div>
+        <div class="list-group list-group-flush flex-grow-1">
+            <a href="/Proyecto-JA/PRESTAMOS/Crud_Prestamos.html" class="list-group-item list-group-item-action bg-dark text-white">Generar Prestamo </a>
+            <a href="/Proyecto-JA/PRESTAMOS/listar.php" class="list-group-item list-group-item-action bg-dark text-white">Listar Eliminar Editar </a>
+        </div>
+            <div class="list-group list-group-flush">
+            <a href="/Proyecto-JA/BOOKS-CRUD/Crud_Books.html" class="list-group-item list-group-item-action bg-dark text-white">Insertar Libros </a>
+            <a href="/Proyecto-JA/BOOKS-CRUD/ListBook.php" class="list-group-item list-group-item-action bg-dark text-white">Listar Eliminar Editar </a>
+        </div>
+
+        <div class="mt-auto">
+            <a href="#" class="list-group-item list-group-item-action bg-dark text-white" style="text-align: center;" onclick="confirmarCerrarSesion()">
+                Cerrar sesión
+            </a>
+        </div>
+</div>
+
+    <!-- Contenido principal -->
+     
+    <script>
+function confirmarCerrarSesion() {
+    Swal.fire({
+        title: '¿Estás seguro?',
+        text: "¿Quieres cerrar sesión?",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Sí, cerrar sesión',
+        cancelButtonText: 'Cancelar'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            // Redirigir a la página de cerrar sesión
+            window.location.href = "/Proyecto-JA/index.html";
+        }
+    });
+}
+
+
+    </script>
+    
+
+    <div id="page-content-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="btn btn-dark" id="menu-toggle">☰</button>
+        </nav>
+
+        <div class="container-fluid">
+            <h2>Generar Préstamo</h2>
+            <form id="prestamoForm" action="Crud-Libros.php" method="POST">
+                <label for="id_libro">Código del Libro:</label>
+                <input type="number" name="id_libro" id="id_libro" required><br><br>
+                
+                <!-- Campo oculto para enviar el título del libro -->
+                <input type="hidden" id="titulo_libro" name="titulo_libro">
+                
+                <label for="id_usuario">Cédula del Usuario:</label>
+                <input type="number" name="id_usuario" id="id_usuario" required><br><br>
+            
+                <label for="fecha_prestamo">Fecha de Préstamo:</label>
+                <input type="datetime-local" name="fecha_prestamo" required><br><br>
+                
+                <label for="fecha_regreso">Fecha de Devolución:</label>
+                <input type="datetime-local" name="fecha_regreso"><br><br>
+                
+                <input type="submit" value="Registrar Préstamo">
+            </form>
+            
+            <script>
+            // 
+            document.getElementById("prestamoForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                
+                this.submit(); 
+            });
+            </script>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+    menuToggle.addEventListener('click', () => {
+        sidebar.classList.toggle('collapse');
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</body>
+</html>

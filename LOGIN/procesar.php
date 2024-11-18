@@ -30,18 +30,20 @@
         $tipoUsuario = $row["tipo_usuario"];
         if ($tipoUsuario == "Administrador") {
             echo 
-            "<div class='fondo'>
+            "
+            <div class='fondo'>
             <img src='../Imágenes/logo.jpg' class='logo' alt='img'>
             <div class='message'>¡Bienvenido, $nombre! Eres Administrador.
             </div>
-            <a class='boton' href='../index.html'>Ingresar</a>
+            <a class='boton' href='../PRESTAMOS/Crud_Prestamos.html'>Ingresar</a>
             <a class='regreso' href='../Login/login.html'>Regresar</a>
 
             </div>";
         } else {
             echo 
             "<div class='fondo'>
-            <div class='message'>¡Bienvenido, $nombre!
+            <div class='message'>¡Bienvenid@, $nombre!
+            <div class='message'>Mis Prestamos
             </div>
             </div>";
         }
